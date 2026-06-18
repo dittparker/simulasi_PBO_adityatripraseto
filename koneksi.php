@@ -5,7 +5,7 @@ class Koneksi {
     private $host     = "localhost";
     private $username = "root";
     private $password = "";
-    private $database = "db_simulasi_ti-1D_adityatriprasetyo"; 
+    private $database = "db_simulasi_ti_1d_adityatriprasetyo"; 
     public $db;
 
     public function __construct() {
