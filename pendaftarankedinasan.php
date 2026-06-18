@@ -14,9 +14,9 @@ class PendaftaranKedinasan extends Pendaftaran {
     }
 
     // Implementasi wajib dari abstract method induk
-    public function hitungTotalBiaya() {
-        return 0; // Contoh: Beasiswa ikatan dinas (Gratis)
-    }
+public function hitungTotalBiaya() {
+    return $this->biayaPendaftaranDasar * 1.25;
+}
 
     public function tampilkanInfoJalur() {
         return "Jalur Kedinasan - Sponsor: " . $this->instansiSponsor . " (No SK: " . $this->skIkatanDinas . ")";

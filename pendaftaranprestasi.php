@@ -14,10 +14,9 @@ class PendaftaranPrestasi extends Pendaftaran {
     }
 
     // Implementasi wajib dari abstract method induk
-    public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar; 
-    }
-
+public function hitungTotalBiaya() {
+    return $this->biayaPendaftaranDasar - 50000;
+}
     public function tampilkanInfoJalur() {
         return "Jalur Prestasi - " . $this->jenisPrestasi . " Tingkat " . $this->tingkatPrestasi;
     }
